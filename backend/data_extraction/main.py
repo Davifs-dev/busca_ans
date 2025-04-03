@@ -40,7 +40,7 @@ for i, table in enumerate(pdf):
 # Salvar o DataFrame ajustado em CSV
 df_final = pd.concat(df_final, ignore_index=True)
 
-# Troca o nome das colunas conforme solicitado no exercicio
+# Troca o nome das colunas 
 df_final.rename(
     columns={"OD": "Seg.Odontológica", "AMB": "Seg.Ambulatorial"}, inplace=True
 )
